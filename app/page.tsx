@@ -35,7 +35,7 @@ export default function Home() {
         </aside>
         <article className="content">
           <section id="about-me" className="intro section-anchor">
-            <p>I am a developer and AI enthusiast at the <strong>Beijing University of Posts and Telecommunications</strong>. My work focuses on large language models, agent systems, LLMOps, and the infrastructure needed to turn research ideas into useful products.</p>
+            <p>I am an undergraduate student at <strong>Beijing University of Posts and Telecommunications</strong>, majoring in Internet of Things Engineering in the BUPT–Queen Mary University of London joint programme. My work focuses on large language models, agent systems, LLMOps, and the infrastructure needed to turn research ideas into useful products.</p>
             <p>I enjoy building open-source software across Python, Go, and TypeScript—from multi-agent collaboration frameworks to developer platforms and creative tools. I care about systems that are not only capable, but also understandable, dependable, and genuinely useful.</p>
           </section>
           <section id="news" className="section-anchor">
@@ -69,9 +69,15 @@ export default function Home() {
           </section>
           <section id="education" className="section-anchor">
             <h2><span aria-hidden="true">📖</span> Education</h2>
-            <div className="timeline-card">
-              <div className="timeline-card__mark">BUPT</div>
-              <div><h3>Beijing University of Posts and Telecommunications</h3><p>Current affiliation · Beijing, China</p><p className="muted">Interests: AI agents, LLMOps, large language models, and software systems.</p></div>
+            <div className="education-list">
+              <div className="timeline-card">
+                <div className="timeline-card__mark">BUPT</div>
+                <div><h3>Beijing University of Posts and Telecommunications</h3><p>B.Eng. in Internet of Things Engineering</p><p className="muted">Sep. 2023 – Jun. 2027 (Expected)</p></div>
+              </div>
+              <div className="timeline-card">
+                <div className="timeline-card__mark timeline-card__mark--qmul">QMUL</div>
+                <div><h3>Queen Mary University of London</h3><p>B.Eng. in Internet of Things Engineering</p><p className="muted">Sep. 2023 – Jun. 2027 (Expected)</p></div>
+              </div>
             </div>
           </section>
           <section id="experience" className="section-anchor">

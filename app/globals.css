@@ -37,14 +37,7 @@ h2 span { margin-right:6px; font-size:17px; }
 .projects { display:grid; gap:17px; }
 .project { display:grid; grid-template-columns:220px minmax(0,1fr); gap:22px; padding:16px; border:1px solid #e3e7ea; background:#fff; transition:box-shadow 160ms ease,transform 160ms ease; }
 .project:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(31,53,70,.08); }
-.project__visual { position:relative; min-height:132px; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#dfe7ec; color:#27435a; }
-.project__visual::before,.project__visual::after { content:""; position:absolute; border:1px solid rgba(34,75,141,.22); border-radius:50%; }
-.project__visual::before { width:138px; height:138px; top:-46px; left:-31px; }
-.project__visual::after { width:92px; height:92px; right:-24px; bottom:-27px; }
-.project__visual--2 { background:#e8e4dc; color:#66594b; }
-.project__visual--3 { background:#e2e8df; color:#405a42; }
-.project__visual span { position:relative; z-index:1; font-family:Georgia,serif; font-size:42px; }
-.project__visual i { position:absolute; right:10px; bottom:8px; z-index:1; color:rgba(42,54,63,.68); font-size:9px; font-style:normal; letter-spacing:.08em; text-transform:uppercase; }
+.project__visual { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; border:1px solid #e6eaed; background:#f7f9fa; }
 .project__eyebrow { margin:0 0 1px!important; color:#7b858d; font-size:10px!important; font-weight:700; letter-spacing:.11em; text-transform:uppercase; }
 .project h3 { margin:0 0 7px; font-size:17px; line-height:1.35; }
 .project__body > p { margin:0 0 10px; color:#59636b; font-size:13px; line-height:1.62; }
@@ -89,7 +82,6 @@ footer { margin-top:44px; padding-top:18px; display:flex; justify-content:space-
   .profile h1 { font-size:21px; }
   .profile__title { font-size:11px; }
   .project { grid-template-columns:1fr; }
-  .project__visual { min-height:118px; }
   .experience-grid { grid-template-columns:1fr; }
   .experience-grid > div { min-height:0; }
 }

@@ -1,7 +1,7 @@
 const projects = [
-  { name: "MultiGen", label: "Multi-agent Systems", description: "A general-purpose AI agent framework for multimodal, multi-agent collaboration and end-to-end task execution.", meta: "Python · 467 GitHub stars", href: "https://github.com/lingyuanli/MultiGen", site: "https://www.manus.llmops.org.cn" },
-  { name: "FrameLoom", label: "Agent-native Tools", description: "An open-source video editor that turns natural-language instructions into editable timelines, captions, motion graphics, and production-ready exports.", meta: "Open source · 2026", href: "https://github.com/lingyuanli/FrameLoom" },
-  { name: "LLMOps Platform", label: "AI Infrastructure", description: "A low-code AI agent development platform for building, evaluating, and operating LLM applications.", meta: "Python · LLMOps", href: "https://github.com/lingyuanli/llmops-ai-agent-development-platform", site: "https://llmops.org.cn" },
+  { name: "MultiGen", label: "Multi-agent Systems", description: "A general-purpose AI agent framework for multimodal, multi-agent collaboration and end-to-end task execution.", meta: "Python · 467 GitHub stars", href: "https://github.com/lingyuanli/MultiGen", site: "https://www.manus.llmops.org.cn", image: "/multigen-cover.png" },
+  { name: "FrameLoom", label: "Agent-native Tools", description: "An open-source video editor that turns natural-language instructions into editable timelines, captions, motion graphics, and production-ready exports.", meta: "Open source · 2026", href: "https://github.com/lingyuanli/FrameLoom", image: "/frameloom-cover.png" },
+  { name: "LLMOps Platform", label: "AI Infrastructure", description: "A low-code AI agent development platform for building, evaluating, and operating LLM applications.", meta: "Python · LLMOps", href: "https://github.com/lingyuanli/llmops-ai-agent-development-platform", site: "https://llmops.org.cn", image: "/llmops-cover.png" },
 ];
 const navItems = [["About Me", "about-me"], ["News", "news"], ["Projects", "projects"], ["Education", "education"], ["Experience", "experience"]];
 export default function Home() {
@@ -49,11 +49,9 @@ export default function Home() {
           <section id="projects" className="section-anchor">
             <h2><span aria-hidden="true">📝</span> Selected Projects</h2>
             <div className="projects">
-              {projects.map((project, index) => (
+              {projects.map((project) => (
                 <article className="project" key={project.name}>
-                  <div className={"project__visual project__visual--" + (index + 1)} aria-hidden="true">
-                    <span>{project.name.slice(0, 2).toUpperCase()}</span><i>{project.label}</i>
-                  </div>
+                  <img className="project__visual" src={project.image} alt={project.name + " project illustration"} width="900" height="600" />
                   <div className="project__body">
                     <p className="project__eyebrow">{project.label}</p>
                     <h3><a href={project.href}>{project.name}</a></h3>

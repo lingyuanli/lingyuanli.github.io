@@ -81,7 +81,7 @@ export default function Home() {
             </div>
           </section>
           <section id="experience" className="section-anchor">
-            <h2><span aria-hidden="true">💼</span> Experience &amp; Focus</h2>
+            <h2>Experience &amp; Focus</h2>
             <div className="experience-grid">
               <div><h3>AI Agent Engineering</h3><p>Designing multi-agent workflows, tool-use systems, sandboxes, and multimodal collaboration.</p></div>
               <div><h3>LLMOps Infrastructure</h3><p>Building platforms for prompt orchestration, model integration, evaluation, and deployment.</p></div>

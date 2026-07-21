@@ -71,11 +71,11 @@ export default function Home() {
             <h2><span aria-hidden="true">📖</span> Education</h2>
             <div className="education-list">
               <div className="timeline-card">
-                <div className="timeline-card__mark">BUPT</div>
+                <div className="timeline-card__mark timeline-card__mark--logo"><img src="/bupt-logo.png" alt="Beijing University of Posts and Telecommunications logo" width="92" height="92" /></div>
                 <div><h3>Beijing University of Posts and Telecommunications</h3><p>B.Eng. in Internet of Things Engineering</p><p className="muted">Sep. 2023 – Jun. 2027 (Expected)</p></div>
               </div>
               <div className="timeline-card">
-                <div className="timeline-card__mark timeline-card__mark--qmul">QMUL</div>
+                <div className="timeline-card__mark timeline-card__mark--logo timeline-card__mark--qmul"><img src="/qmul-logo.jpeg" alt="Queen Mary University of London logo" width="92" height="92" /></div>
                 <div><h3>Queen Mary University of London</h3><p>B.Eng. in Internet of Things Engineering</p><p className="muted">Sep. 2023 – Jun. 2027 (Expected)</p></div>
               </div>
             </div>

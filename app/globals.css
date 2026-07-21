@@ -54,7 +54,9 @@ h2 span { margin-right:6px; font-size:17px; }
 .timeline-card { display:grid; grid-template-columns:122px 1fr; gap:24px; align-items:center; padding:14px 0; }
 .timeline-card + .timeline-card { border-top:1px solid var(--line); }
 .timeline-card__mark { display:grid; place-items:center; min-height:82px; color:var(--blue); border:1px solid #d8e0e8; background:var(--soft); font-family:Georgia,serif; font-size:19px; font-weight:700; }
-.timeline-card__mark--qmul { color:#761b35; background:#faf5f6; border-color:#eadde1; }
+.timeline-card__mark--logo { height:104px; padding:9px; background:#fff; }
+.timeline-card__mark--logo img { display:block; width:84px; height:84px; object-fit:contain; }
+.timeline-card__mark--qmul { background:#073b8f; border-color:#073b8f; }
 .timeline-card h3,.experience-grid h3 { margin:0 0 4px; color:#3c444a; font-size:15px; }
 .timeline-card p,.experience-grid p { margin:2px 0; color:#59636b; font-size:13px; }
 .timeline-card .muted { color:#7a848c; }
